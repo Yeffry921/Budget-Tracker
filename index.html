@@ -4,35 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/c2644e4996.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Heading -->
     <header class="top">
         <div>
-            <h1>Budget Availvable</h1>
-            <p>+<span> 0.00</span></p>
+            <h3>Available Budget </h3>
+            <p class="eval">+<span class="budget-amount"> 0.00</span></p>
         </div>
 
         <div>
-            <p>Income<span class="income"></span></p>
-            <p>Expenses<span class="expenses"></span></p>            
+            <p>Income: <span class="income"></span></p>
+            <p>Expenses: <span class="expenses"></span></p>            
         </div>
     </header>
 
     <!-- Dump Info -->
     <section class="middle">
         <div>
-            <form>
-                <select name="" id="" class="add">
-                    <option value="-">+</option>
-                    <option value="+">-</option>
+            <form class="form">
+                <select name="optionValue" id="">
+                    <option value="+">Income</option>
+                    <option value="-">Expense</option>
                 </select>
 
-                <input type="text" name="" id="" class="add" placeholder="Income/Expense Name">
-                <input type="text" placeholder="Value">
+                <input type="text" name="description" id=""  placeholder="Income/Expense Name">
+                <input type="text" name="amount" placeholder="Value">
 
-                
+                <button class="btn"><i class="fas fa-arrow-right"></i></button>
             </form>
         </div>
     </section>
